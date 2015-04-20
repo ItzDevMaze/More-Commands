@@ -76,6 +76,17 @@ class Main extends PluginBase{
                     $sender->sendMessage(TextFormat::RED . "Command must be used in-game!");
                 }
                 break;
+                $p = $sender->getPlayer();
+$s1 = $this->getConfig()->get("Spleef arena one");
+ 
+             case "spleef-1" :{
+                 if(!($sender->instanceof Player)) {
+                      $sender->sendMessage(TextFormat::RED . "Please use this Command in-game");
+                }else {
+              $p->teleport($s1);
+                 }
+                break;
+                }
             }
         }
     }
