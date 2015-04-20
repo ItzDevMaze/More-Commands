@@ -76,15 +76,6 @@ class Main extends PluginBase{
                     $sender->sendMessage(TextFormat::RED . "Command must be used in-game!");
                 }
                 break;
-                 case "message":{
-                if($sender instanceof Player){
-                    $sender->sendMessage($this->messagem);
-                    $sender->getPlayer()->$message("This plugin was created by Jack!");
-                }else{
-                    $sender->sendMessage(TextFormat::RED . "Command must be used in-game!");
-                }
-                break;
-                }
             }
         }
     }
